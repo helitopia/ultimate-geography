@@ -42,13 +42,14 @@ function getMapConfig() {
     selector: configObj.commonElements.interactiveMap,
     map: configObj.commonConfig.mapSvgId,
     zoomButtons: false,
-    zoomMax: 25,
+    zoomMax: 20000,
+    strokeScaling: false,
     backgroundColor: configObj.commonColors.background,
     regionStyle: {
       initial: {
         fill: configObj.commonColors.region,
         stroke: configObj.commonColors.border,
-        strokeWidth: 0.2
+        strokeWidth: 1
       }
     }
   };
