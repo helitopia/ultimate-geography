@@ -51,6 +51,9 @@ function getMapConfig() {
         stroke: configObj.commonColors.border,
         strokeWidth: 1
       }
+    },
+    onViewportChange(zoomLevel) {
+      document.querySelector("body .zoom").textContent = zoomLevel;
     }
   };
   return configObj;
